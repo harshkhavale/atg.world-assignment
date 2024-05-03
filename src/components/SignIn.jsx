@@ -31,10 +31,10 @@ const SignIn = ({userhandler,close,changeAuth}) => {
         
       </div>
 <div className=" flex items-center gap-2">
-<button className=" bg-blue-500 p-2 w-full rounded-full text-white text-center font-bold" onClick={authUser}>
+<button className=" bg-blue-500 p-2 w-full  rounded-full text-white text-center font-bold" onClick={authUser}>
         Sign In
       </button>
-      <p className=" md:hidden text-gray-600 font-normal underline underline-offset-4 text-nowrap" onClick={changeAuth}>or, Create Account</p>
+      <p className=" md:hidden text-gray-600 font-normal underline underline-offset-4 text-nowrap cursor-pointer" onClick={changeAuth}>or, Create Account</p>
 </div>
 
       <div className="other flex flex-col gap-2">
@@ -45,7 +45,7 @@ const SignIn = ({userhandler,close,changeAuth}) => {
           <FaFacebook className=" text-blue-500" /> Sign in with Google
         </button>
         <div>
-            <p className="font-bold text-center my-2">Forgot Password?</p>
+            <p className="font-bold text-center my-2 cursor-pointer">Forgot Password?</p>
         </div>
       </div>
     </div>

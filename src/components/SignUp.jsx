@@ -52,9 +52,9 @@ const SignUp = ({userhandler,close,changeAuth}) => {
       </div>
 
 <div className=" flex items-center gap-2">
-<button className=" bg-blue-500 p-2 w-full rounded-full text-white text-center font-bold" onClick={authUser}>
+<button className=" bg-blue-500 p-2 w-full rounded-full cursor-pointer text-white text-center font-bold" onClick={authUser}>
         Create Account
-      </button>      <p className=" md:hidden text-gray-600 font-normal underline underline-offset-4 text-nowrap" onClick={changeAuth}>or, Create Account</p>
+      </button>      <p className=" md:hidden text-gray-600 font-normal underline underline-offset-4 cursor-pointer text-nowrap" onClick={changeAuth}>or, Create Account</p>
 
       
 </div>

@@ -55,7 +55,7 @@ const Header = ({ handleUser, user }) => {
       )}
     </div>
 
-    <div className=" md:hidden text-white text-3xl fixed bottom-4 right-4 write bg-gradient-to-r from-[#FF5C5C] to-[#F0568A] rounded-full p-2" onClick={handleModal}>
+    <div className=" md:hidden text-white text-3xl fixed bottom-4 cursor-pointer z-50 right-4 write bg-gradient-to-r from-[#FF5C5C] to-[#F0568A] rounded-full p-2" onClick={handleModal}>
     <MdOutlineModeEdit />
 
     </div>
