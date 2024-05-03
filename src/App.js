@@ -1,23 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Feed from "./components/Feed";
+import Flex from "./components/Flex";
+import Header from "./components/Header";
+
 
 function App() {
+  const [user,setUser] = useState(false);
+  const handleUser = () => {
+    setUser(!user);
+  }
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header handleUser={handleUser} user={user}/>
+      <Flex/>
+      <Feed  user = {user}/>
     </div>
   );
 }
