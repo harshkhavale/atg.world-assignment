@@ -8,24 +8,24 @@ import Group from "./Group";
 
 const Feed = ({handleUser,user}) => {
   return (
-    <div className="feed md:px-36 flex flex-col gap-8 py-10">
+    <div className="feed lg:px-36 flex flex-col md:px-4 gap-8 py-10">
       <div className=" hidden md:visible header md:flex items-center justify-between relative py-4">
-        <ul className="font-bold text-gray-500 flex items-center gap-6">
-          <li className="text-black">All Posts(32)</li>
+        <ul className="font-bold text-gray-500 flex items-center md:gap-2 lg:gap-6">
+          <li className="text-black text-nowrap">All Posts(32)</li>
           <li>Article</li>
           <li>Event</li>
           <li>Education</li>
           <li>Job</li>
         </ul>
         <div className="controls gap-4 flex items-center">
-          <button className="write font-bold bg-gray-200 flex items-center gap-2 p-2">
+          <button className="write font-bold bg-gray-200 flex text-nowrap items-center gap-2 p-2">
             Write a Post <MdArrowDropDown />
           </button>
-          <button className="leave text-gray-600 border rounded-sm border-gray-400 flex items-center gap-2 p-2">
+          <button className="leave text-gray-600 border text-nowrap rounded-sm border-gray-400 flex items-center gap-2 p-2">
             Leave Group
             <MdExitToApp />
           </button>
-          <button className="join bg-blue-500 text-white font-bold flex items-center gap-2 p-2">
+          <button className="join bg-blue-500 text-white text-nowrap font-bold flex items-center gap-2 p-2">
             Join Group
             <HiUsers />
           </button>
@@ -38,7 +38,7 @@ const Feed = ({handleUser,user}) => {
         <p className="bg-gray-100 p-2 font-semibold flex items-center gap-2">Filter:All <MdArrowDropDown/></p>
       </div>
 
-      <div className="main md:grid grid-cols-5 gap-10">
+      <div className="main md:grid grid-cols-5 md:gap-2 lg:gap-10">
         <div className="posts col-span-3 flex flex-col gap-4">
           {posts.map((post, index) => (
             <Post key={index} post={post} />

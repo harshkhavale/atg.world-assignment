@@ -24,7 +24,7 @@ const Header = ({ handleUser, user }) => {
           W <img src={logo} alt="logo" className=" h-6 w-6" /> RLD
         </span>
       </div>
-      <div className="search w-[25rem] flex gap-4 p-2 items-center bg-gray-200  rounded-3xl">
+      <div className="search md:w-[20rem] flex md:text-sm gap-2 p-2 items-center bg-gray-200  rounded-3xl">
         <MdOutlineSearch className=" font-bold text-xl text-gray-500" />
         <input
           type="text"
@@ -33,9 +33,9 @@ const Header = ({ handleUser, user }) => {
         />
       </div>
       {!user ? (
-        <div className="link flex items-center">
+        <div className="link flex items-center text-nowrap">
           create account.{" "}
-          <p className=" text-blue-500 cursor-pointer" onClick={handleModal}>
+          <p className=" text-blue-500 cursor-pointer text-nowrap" onClick={handleModal}>
             It's free!
           </p>
           <MdArrowDropDown />
